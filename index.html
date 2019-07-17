@@ -53,28 +53,30 @@
 					<li class="item">Feminino</li>
 				</ul>
 				<div class="size-filter">
-					<ul><h4>Tamanho</h4></ul>
+					<h4>Tamanho</h4>
+					<form>
 						<select name="size" multiple="multiple">
-							<option value="G2">G2</optio>
+							<option value="G2">G2</option>
 							<option value="G3">G3</option>
 							<option value="9/12">9/12M</option>
 							<option value="G4">G4</option>
-							<option value="G1">G1<option>
-							<option value="MP">MP<option>
-							<option value="P">P<option>
-							<option value="M">M<option>
-							<option value="G">G<option>
-							<option value="GG">GG<option>
-							<option value="XG">XG<option>
-							<option value="EGG">EGG<option>
-							<option value="1">1<option>
-							<option value="2">2<option>
-							<option value="3">3<option>
-							<option value="4">4<option>
+							<option value="G1">G1</option>
+							<option value="MP">MP</option>
+							<option value="P">P</option>
+							<option value="M">M</option>
+							<option value="G">G</option>
+							<option value="GG">GG</option>
+							<option value="XG">XG</option>
+							<option value="EGG">EGG</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
 						</select>
+					</form>
 				</div>
 				<div class="brand-filter">
-					<ul><h4>Marca</h4></ul>
+					<h4>Marca</h4>
 						<form>
 						<select name="size" multiple="multiple">
 							<option value="Amaro">AMARO</option>
@@ -88,7 +90,7 @@
 						</form>
 				</div>
 				<div class="price-filter">
-					<ul><h4>Preço</h4></ul>
+					<h4>Preço</h4>
 						<form>
 							<select name="size" multiple="multiple">
 							<option value="price1060">R$ 10 - R$ 60</option>
@@ -100,20 +102,28 @@
 						</select>
 						</form>
 				</div>
-				<div class="colour-filter">
-					<ul><h4>Cor</h4></ul>
-					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Yellow_icon.svg/1024px-Yellow_icon.svg.png" class="yellow">
-						<form>
-						<select name="size" multiple="multiple">
-							<option value="colour1">
-							Amarelo</option>
-							<option value="colour2">Amarelo Claro</option>
-							<option value="colour3">Amarelo Fluorescente</option>
-							<option value="colour4">Areia</option>
-							<option value="colour5">Azul</option>
-							<option value="colour6">Azul Claro</option>
-						</select>
-						</form>
+				<div class="color-filter">
+					<h4>Cor</h4>
+					<form>
+							<ul>
+								<li class="color-yellow">
+									<label><input type="checkbox" checked value="yellow" /> Amarelo</label>
+								</li>
+							</ul>
+					</form>
+				</div>
+				<div class="genre-filter">
+					<h4>Genero</h4>
+					<form>
+							<ul>
+								<li class="genre-male'">
+									<label><input type="radio" name="genre" value="male" /> Masculino</label>
+								</li>
+								<li class="genre-female'">
+									<label><input type="radio" name="genre" value="female" checked /> Feminino</label>
+								</li>
+							</ul>
+					</form>
 				</div>
 				<!--<div class="female">
 					<a>Feminino</a>
