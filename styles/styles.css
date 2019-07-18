@@ -327,7 +327,6 @@ div.content .items {
   position: relative;
 }
 div.content .items img {
-  width: 100%;
   display: block;
 }
 div.content .items:nth-child(3n) {
@@ -347,13 +346,101 @@ div.content .items a img.over {
   top: 0;
   left: 0;
   transition: all .2s ease;
+  width: 100%;
 }
 div.content .items a:hover img.over {
   display: block;
   opacity: 1;
 }
+div.content .items .image {
+  margin-bottom: 15px;
+  width: 100%;
+}
+div.content .items a {
+  text-decoration: none;
+}
+div.content .items p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+div.content .items .product-promo {
+  padding: 5px 10px;
+  margin: 10px 0;
+  color: white;
+  background: #38A9DE;
+  display: inline-block;
+  font-weight: bold;
+}
+div.content .items .flag-discount:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-top: 17px solid #cc0000;
+  left: 0;
+  bottom: -17px;
+}
+div.content .items .like img {
+  display: inline;
+  margin: 0;
+}
+div.content .items .like {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #e0e0e0;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  z-index: 4;
+  text-align: center;
+  line-height: 40px;
+}
+div.content .items .flag-discount {
+  position: absolute;
+  width: 34px;
+  height: 24px;
+  background-color: #cc0000;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  line-height: 25px;
+  top: 5px;
+  left: 5px;
+  z-index: 4;
+}
+div.content .items .product-installments {
+  font-size: 14px;
+  color: #38A9DE;
+}
+div.content .items .price-out {
+  color: #8c8c8c;
+  font-size: 11px;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+div.content .items .product-price {
+  color: #38A9DE;
+  font-size: 12px;
+}
+.strong {
+  font-weight: bold;
+}
 /** Tablets **/
 @media (min-width: 426px) and (max-width: 768px) {
+  div.sidebar {
+    display: none;
+  }
+  div.content {
+    width: 100%;
+    margin: 0;
+  }
 }
 /** Smartphones **/
 @media (max-width: 425px) {
