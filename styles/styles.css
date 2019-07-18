@@ -352,7 +352,11 @@ div.content .items a:hover img.over {
   display: block;
   opacity: 1;
 }
-@media (max-width: 400px) {
+/** Tablets **/
+@media (min-width: 426px) and (max-width: 768px) {
+}
+/** Smartphones **/
+@media (max-width: 425px) {
   div.sidebar {
     display: none;
   }
