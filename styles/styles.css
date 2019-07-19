@@ -432,6 +432,9 @@ div.content .items .product-price {
 .strong {
   font-weight: bold;
 }
+header nav .icon {
+  display: none;
+}
 /** Tablets **/
 @media (min-width: 426px) and (max-width: 768px) {
   div.sidebar {
@@ -469,5 +472,33 @@ div.content .items .product-price {
   }
   header .logo:after {
     content: 'logo';
+  }
+  div.search {
+    display: none;
+  }
+  header nav .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    padding-top: 100px;
+    transform: translateX(140px);
+    transition: all ease .3s;
+  }
+  header nav.opened {
+    background: rgba(50,50,50,0.95);
+    transform: translateX(0px);
+  }
+  header nav ul li {
+    display: block;
+    padding: 20px 0;
   }
 }
